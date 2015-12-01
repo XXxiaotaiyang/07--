@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AddContactViewController;
+@class Contact;
+@protocol AddContactViewControllerDelegate <NSObject>
+@optional
+- (void)addContactViewController:(AddContactViewController *)addContactVC didSaveContact:(Contact *)contact;
+
+@end
 
 @interface AddContactViewController : UIViewController
+@property(nonatomic, weak) id<AddContactViewControllerDelegate> delegate;
 
 @end

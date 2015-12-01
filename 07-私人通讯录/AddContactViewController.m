@@ -7,8 +7,13 @@
 //
 
 #import "AddContactViewController.h"
+#import "Contact.h"
 
 @interface AddContactViewController ()
+/** 姓名 */
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+/** 电话*/
+@property (weak, nonatomic) IBOutlet UITextField *telphoneTextField;
 
 @end
 
@@ -24,14 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)saveBtnClick {
+    Contact *contact = [[Contact alloc] init];
+    // 获取姓名
+    contact.name = self.nameTextField.text;
+    // 获取电话
+    contact.telphone = self.telphoneTextField.text;
+    
+    if ([self.delegate respondsToSelector:@selector(addContactViewController:didSaveContact:)]) {
+        [self.delegate addContactViewController:self didSaveContact:contact];
+    }
 }
-*/
+
 
 @end
