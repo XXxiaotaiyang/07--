@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 /** 登录按钮点击 */
 - (IBAction)loginBtnClick:(UIButton *)sender;
+/** 记住密码 */
+@property (weak, nonatomic) IBOutlet UISwitch *remeberPwdSwitch;
+/** 自动登录 */
+@property (weak, nonatomic) IBOutlet UISwitch *autoLoginSwitch;
 
 @end
 
@@ -45,6 +49,8 @@
 }
 
 
+#pragma mark - 监听登录界面的按钮点击
+
 - (IBAction)loginBtnClick:(UIButton *)sender {
     
     NSString *account = self.accountField.text;
@@ -61,4 +67,21 @@
     });
     
 }
+
+/** 如果记住密码关闭  就将自动登录关闭 */
+- (IBAction)remeberPwdSwitchChange:(id)sender {
+    if (self.remeberPwdSwitch.isOn == NO && self.autoLoginSwitch.isOn == YES) {
+        
+        [self.autoLoginSwitch setOn:NO animated:YES];
+    }
+}
+
+/** 如果自动登录打开  就把记住密码打开 */
+- (IBAction)autoLoginSwitchChange:(id)sender {
+    if (self.remeberPwdSwitch.isOn == NO && self.autoLoginSwitch.isOn == YES) {
+        
+        [self.remeberPwdSwitch setOn:YES animated:YES];
+    }
+}
+
 @end
