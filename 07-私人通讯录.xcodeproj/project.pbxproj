@@ -15,6 +15,9 @@
 		CADE4F211C0D829900043ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADE4F1F1C0D829900043ED1 /* LaunchScreen.storyboard */; };
 		CADE4F2C1C0D829900043ED1 /* _7______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F2B1C0D829900043ED1 /* _7______Tests.m */; };
 		CADE4F371C0D829900043ED1 /* _7______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F361C0D829900043ED1 /* _7______UITests.m */; };
+		CADE4F4A1C0D82A800043ED1 /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F461C0D82A800043ED1 /* MBProgressHUD+CZ.m */; };
+		CADE4F4B1C0D82A800043ED1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CADE4F471C0D82A800043ED1 /* MBProgressHUD.bundle */; };
+		CADE4F4C1C0D82A800043ED1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F491C0D82A800043ED1 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		CADE4F321C0D829900043ED1 /* 07-私人通讯录UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "07-私人通讯录UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADE4F361C0D829900043ED1 /* _7______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_7______UITests.m"; sourceTree = "<group>"; };
 		CADE4F381C0D829900043ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADE4F451C0D82A800043ED1 /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		CADE4F461C0D82A800043ED1 /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+		CADE4F471C0D82A800043ED1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		CADE4F481C0D82A800043ED1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CADE4F491C0D82A800043ED1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		CADE4F101C0D829900043ED1 /* 07-私人通讯录 */ = {
 			isa = PBXGroup;
 			children = (
+				CADE4F441C0D82A800043ED1 /* MBProgressHUD */,
 				CADE4F141C0D829900043ED1 /* AppDelegate.h */,
 				CADE4F151C0D829900043ED1 /* AppDelegate.m */,
 				CADE4F171C0D829900043ED1 /* ViewController.h */,
@@ -138,6 +147,18 @@
 				CADE4F381C0D829900043ED1 /* Info.plist */,
 			);
 			path = "07-私人通讯录UITests";
+			sourceTree = "<group>";
+		};
+		CADE4F441C0D82A800043ED1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CADE4F451C0D82A800043ED1 /* MBProgressHUD+CZ.h */,
+				CADE4F461C0D82A800043ED1 /* MBProgressHUD+CZ.m */,
+				CADE4F471C0D82A800043ED1 /* MBProgressHUD.bundle */,
+				CADE4F481C0D82A800043ED1 /* MBProgressHUD.h */,
+				CADE4F491C0D82A800043ED1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADE4F211C0D829900043ED1 /* LaunchScreen.storyboard in Resources */,
+				CADE4F4B1C0D82A800043ED1 /* MBProgressHUD.bundle in Resources */,
 				CADE4F1E1C0D829900043ED1 /* Assets.xcassets in Resources */,
 				CADE4F1C1C0D829900043ED1 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +294,8 @@
 			files = (
 				CADE4F191C0D829900043ED1 /* ViewController.m in Sources */,
 				CADE4F161C0D829900043ED1 /* AppDelegate.m in Sources */,
+				CADE4F4C1C0D82A800043ED1 /* MBProgressHUD.m in Sources */,
+				CADE4F4A1C0D82A800043ED1 /* MBProgressHUD+CZ.m in Sources */,
 				CADE4F131C0D829900043ED1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

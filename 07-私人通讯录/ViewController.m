@@ -7,8 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "MBProgressHUD+CZ.h"
+//#import "MBProgressHUD/MBProgressHUD.h"
 
 @interface ViewController ()
+/** 帐号信息 */
+@property (weak, nonatomic) IBOutlet UITextField *accountField;
+/** 密码 */
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+/** 登录按钮 */
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+/** 登录按钮点击 */
+- (IBAction)loginBtnClick:(UIButton *)sender;
 
 @end
 
@@ -16,12 +26,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.accountField];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.passwordField];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (void)textChange
+{
+    self.loginBtn.enabled = (self.accountField.text.length != 0 && self.passwordField.text.length != 0);
+    
+}
+
+
+- (IBAction)loginBtnClick:(UIButton *)sender {
+    
+    NSString *account = self.accountField.text;
+    NSString *password = self.passwordField.text;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([account isEqualToString:@"zhangchaochao"] && [password isEqualToString:@"321"]) {
+            NSLog(@"帐号密码正确");
+            
+            [MBProgressHUD showSuccess:@"正确 准备跳转"];
+        }else{
+            [MBProgressHUD showError:@"帐号或者密码不正确"];
+        }
+    });
+    
+}
 @end
