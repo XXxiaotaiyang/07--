@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MBProgressHUD+CZ.h"
+#import "ContactViewController.h"
 //#import "MBProgressHUD/MBProgressHUD.h"
 
 @interface ViewController ()
@@ -30,6 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.accountField];
     
@@ -55,12 +57,18 @@
     
     NSString *account = self.accountField.text;
     NSString *password = self.passwordField.text;
-    
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if ([account isEqualToString:@"zhangchaochao"] && [password isEqualToString:@"321"]) {
             NSLog(@"帐号密码正确");
             
             [MBProgressHUD showSuccess:@"正确 准备跳转"];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                ContactViewController *contactVC = [[ContactViewController alloc] init];
+                [self performSegueWithIdentifier:@"toContact" sender:nil];
+            });
+            
         }else{
             [MBProgressHUD showError:@"帐号或者密码不正确"];
         }

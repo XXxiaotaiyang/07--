@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0F402F1C0DC71B0076BE65 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F402E1C0DC71B0076BE65 /* Contact.m */; };
+		CA0F40321C0DC7E80076BE65 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F40311C0DC7E80076BE65 /* ContactViewController.m */; };
+		CA0F40351C0DC8080076BE65 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F40341C0DC8080076BE65 /* AddContactViewController.m */; };
+		CAAD8B091C0DDFF3004ACB70 /* EditContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */; };
 		CADE4F131C0D829900043ED1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F121C0D829900043ED1 /* main.m */; };
 		CADE4F161C0D829900043ED1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F151C0D829900043ED1 /* AppDelegate.m */; };
 		CADE4F191C0D829900043ED1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F181C0D829900043ED1 /* ViewController.m */; };
@@ -38,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0F402D1C0DC71B0076BE65 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		CA0F402E1C0DC71B0076BE65 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		CA0F40301C0DC7E80076BE65 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		CA0F40311C0DC7E80076BE65 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		CA0F40331C0DC8080076BE65 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		CA0F40341C0DC8080076BE65 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		CAAD8B071C0DDFF3004ACB70 /* EditContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditContactViewController.h; sourceTree = "<group>"; };
+		CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditContactViewController.m; sourceTree = "<group>"; };
 		CADE4F0E1C0D829800043ED1 /* 07-私人通讯录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-私人通讯录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADE4F121C0D829900043ED1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CADE4F141C0D829900043ED1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0F402C1C0DC6FA0076BE65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA0F402D1C0DC71B0076BE65 /* Contact.h */,
+				CA0F402E1C0DC71B0076BE65 /* Contact.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CADE4F051C0D829800043ED1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +130,18 @@
 		CADE4F101C0D829900043ED1 /* 07-私人通讯录 */ = {
 			isa = PBXGroup;
 			children = (
+				CA0F402C1C0DC6FA0076BE65 /* Model */,
 				CADE4F441C0D82A800043ED1 /* MBProgressHUD */,
 				CADE4F141C0D829900043ED1 /* AppDelegate.h */,
 				CADE4F151C0D829900043ED1 /* AppDelegate.m */,
 				CADE4F171C0D829900043ED1 /* ViewController.h */,
 				CADE4F181C0D829900043ED1 /* ViewController.m */,
+				CA0F40301C0DC7E80076BE65 /* ContactViewController.h */,
+				CA0F40311C0DC7E80076BE65 /* ContactViewController.m */,
+				CA0F40331C0DC8080076BE65 /* AddContactViewController.h */,
+				CA0F40341C0DC8080076BE65 /* AddContactViewController.m */,
+				CAAD8B071C0DDFF3004ACB70 /* EditContactViewController.h */,
+				CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */,
 				CADE4F1A1C0D829900043ED1 /* Main.storyboard */,
 				CADE4F1D1C0D829900043ED1 /* Assets.xcassets */,
 				CADE4F1F1C0D829900043ED1 /* LaunchScreen.storyboard */,
@@ -292,10 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0F40321C0DC7E80076BE65 /* ContactViewController.m in Sources */,
+				CAAD8B091C0DDFF3004ACB70 /* EditContactViewController.m in Sources */,
+				CA0F40351C0DC8080076BE65 /* AddContactViewController.m in Sources */,
 				CADE4F191C0D829900043ED1 /* ViewController.m in Sources */,
 				CADE4F161C0D829900043ED1 /* AppDelegate.m in Sources */,
 				CADE4F4C1C0D82A800043ED1 /* MBProgressHUD.m in Sources */,
 				CADE4F4A1C0D82A800043ED1 /* MBProgressHUD+CZ.m in Sources */,
+				CA0F402F1C0DC71B0076BE65 /* Contact.m in Sources */,
 				CADE4F131C0D829900043ED1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +554,7 @@
 				CADE4F3D1C0D829900043ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CADE4F3E1C0D829900043ED1 /* Build configuration list for PBXNativeTarget "07-私人通讯录Tests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +563,7 @@
 				CADE4F401C0D829900043ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CADE4F411C0D829900043ED1 /* Build configuration list for PBXNativeTarget "07-私人通讯录UITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +572,7 @@
 				CADE4F431C0D829900043ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
