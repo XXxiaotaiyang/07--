@@ -10,6 +10,7 @@
 		CA0F402F1C0DC71B0076BE65 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F402E1C0DC71B0076BE65 /* Contact.m */; };
 		CA0F40321C0DC7E80076BE65 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F40311C0DC7E80076BE65 /* ContactViewController.m */; };
 		CA0F40351C0DC8080076BE65 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F40341C0DC8080076BE65 /* AddContactViewController.m */; };
+		CAAD8B091C0DDFF3004ACB70 /* EditContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */; };
 		CADE4F131C0D829900043ED1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F121C0D829900043ED1 /* main.m */; };
 		CADE4F161C0D829900043ED1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F151C0D829900043ED1 /* AppDelegate.m */; };
 		CADE4F191C0D829900043ED1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADE4F181C0D829900043ED1 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 		CA0F40311C0DC7E80076BE65 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		CA0F40331C0DC8080076BE65 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
 		CA0F40341C0DC8080076BE65 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		CAAD8B071C0DDFF3004ACB70 /* EditContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditContactViewController.h; sourceTree = "<group>"; };
+		CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditContactViewController.m; sourceTree = "<group>"; };
 		CADE4F0E1C0D829800043ED1 /* 07-私人通讯录.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-私人通讯录.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADE4F121C0D829900043ED1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CADE4F141C0D829900043ED1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				CA0F40311C0DC7E80076BE65 /* ContactViewController.m */,
 				CA0F40331C0DC8080076BE65 /* AddContactViewController.h */,
 				CA0F40341C0DC8080076BE65 /* AddContactViewController.m */,
+				CAAD8B071C0DDFF3004ACB70 /* EditContactViewController.h */,
+				CAAD8B081C0DDFF3004ACB70 /* EditContactViewController.m */,
 				CADE4F1A1C0D829900043ED1 /* Main.storyboard */,
 				CADE4F1D1C0D829900043ED1 /* Assets.xcassets */,
 				CADE4F1F1C0D829900043ED1 /* LaunchScreen.storyboard */,
@@ -316,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0F40321C0DC7E80076BE65 /* ContactViewController.m in Sources */,
+				CAAD8B091C0DDFF3004ACB70 /* EditContactViewController.m in Sources */,
 				CA0F40351C0DC8080076BE65 /* AddContactViewController.m in Sources */,
 				CADE4F191C0D829900043ED1 /* ViewController.m in Sources */,
 				CADE4F161C0D829900043ED1 /* AppDelegate.m in Sources */,

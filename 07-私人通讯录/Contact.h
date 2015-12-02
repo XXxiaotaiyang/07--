@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Contact : NSObject
+@interface Contact : NSObject<NSCoding>
 /** 通讯录名字 */
 @property (nonatomic, copy) NSString *name;
 /** 通讯录的电话 */

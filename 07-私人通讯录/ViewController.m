@@ -57,7 +57,7 @@
     
     NSString *account = self.accountField.text;
     NSString *password = self.passwordField.text;
-    
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if ([account isEqualToString:@"zhangchaochao"] && [password isEqualToString:@"321"]) {
             NSLog(@"帐号密码正确");

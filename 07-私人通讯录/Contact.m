@@ -9,5 +9,19 @@
 #import "Contact.h"
 
 @implementation Contact
-
+- (void)encodeWithCoder:(NSCoder *)encode
+{
+    [encode encodeObject:self.name forKey:@"name"];
+    [encode encodeObject:self.telphone forKey:@"telphone"];
+}
+- (nullable instancetype)initWithCoder:(NSCoder *)decoder
+{
+    if (self = [super init]) {
+        //一定要赋值
+        self.name =  [decoder decodeObjectForKey:@"name"];
+        self.telphone = [decoder decodeObjectForKey:@"telphone"];
+    }
+    
+    return self;
+}
 @end
